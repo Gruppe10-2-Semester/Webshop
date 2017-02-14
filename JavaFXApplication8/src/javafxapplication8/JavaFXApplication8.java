@@ -13,10 +13,9 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
-/**
- *
- * @author frede
- */
+
+// SÅ ER VI SATME IGANG
+
 public class JavaFXApplication8 extends Application {
     
     @Override
