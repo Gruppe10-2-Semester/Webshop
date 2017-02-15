@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package javafxapplication8;
+package Webshop;
 
 import javafx.application.Application;
 import javafx.event.ActionEvent;
@@ -16,7 +16,7 @@ import javafx.stage.Stage;
 
 // SÅ ER VI SATME IGANG
 
-public class JavaFXApplication8 extends Application {
+public class Webshop extends Application {
     
     @Override
     public void start(Stage primaryStage) {
