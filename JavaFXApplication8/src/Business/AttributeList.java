@@ -2,14 +2,14 @@ package Business;
 
 import java.util.ArrayList;
 
-//A list of all attributes
-public class ProductAttributes {
+//A list of all attributes - Should be substituted with SQL database
+public class AttributeList {
     
     //The list
     ArrayList<Attribute> attributeList;
     
     //Contructor
-    public ProductAttributes(){
+    public AttributeList(){
         attributeList = new ArrayList<>();
     }
     
@@ -27,27 +27,6 @@ public class ProductAttributes {
         return null;
     }
     
-    
-    //A single attribute, nested class
-    class Attribute {
-        
-        String attributeName;
-        String attributeType;
-        
-        Attribute(String attributeName, String attributeType){
-            this.attributeName = attributeName;
-            this.attributeType = attributeType;
-        }
-        
-        public String getAttributeType(){
-            return attributeType;
-        }
-        
-        public String getAttributeName(){
-            return attributeName;
-        }
-        
-        
-    }
+
     
 }

@@ -1,27 +1,34 @@
 package Business;
 
-import Business.ProductAttributes.Attribute;
 import java.util.ArrayList;
 
-
 public class Category {
-    
+
     String name;
     ArrayList<Attribute> attributeList;
-    ProductAttributes productAttributes;
-    
-    public Category(String name){
+
+    public Category(String name) {
         this.name = name;
         attributeList = new ArrayList<>();
     }
-    
-    public void addAttribute(Attribute attribute){
+
+    public void addAttribute(Attribute attribute) {
         //Add an attribute to the product category via search
-        attributeList.add(attribute);              
+        attributeList.add(attribute);
     }
-    
-    public ArrayList<Attribute> getAllAttributes(){
+
+    public ArrayList<Attribute> getAllAttributes() {
         return attributeList;
+    }
+
+    public Attribute findAttributeByName(String attributeName) {
+        for (Attribute attribute : attributeList) {
+            if (attribute.getAttributeName().equals(attributeName)) {
+                return attribute;
+            }
+        }
+        //In this case, the attribute did not exist
+        return null;
     }
 
 }
