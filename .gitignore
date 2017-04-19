@@ -20,3 +20,6 @@ nbactions.xml
 .nb-gradle/
 /Webshop/nbproject/private/
 /JavaFXApplication8/nbproject/private/
+JavaFXApplication8/nbproject/jfx-impl.xml
+JavaFXApplication8/nbproject/UPDATED.TXT
+JavaFXApplication8/nbproject/jfx-impl_backup_*.xml
