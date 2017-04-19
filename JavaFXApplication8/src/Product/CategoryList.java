@@ -1,7 +1,8 @@
-package Business;
+package Product;
 
 import java.util.ArrayList;
 
+//List of all categories. Should be substituted with SQL database.
 public class CategoryList {
     
     ArrayList<Category> categoryList;
