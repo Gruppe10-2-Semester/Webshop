@@ -15,7 +15,7 @@ import Product.Product;
 public interface ProductManageable {
     
     
-    public void createNewProduct();
+    public void createNewProduct(String productName, Category category, int productID);
     public void createNewProductCategory();
     public void createNewCategoryAttribute(Category category);
     public void showAllProducts();

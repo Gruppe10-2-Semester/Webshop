@@ -6,16 +6,31 @@
 package Business;
 
 import Product.Product;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
  * @author MadsNorby
  */
-public class ProductCatalog implements ICatalog{
+public class ProductCatalog implements ICatalog {
+
+    private List<Product> products;
+
+    public ProductCatalog() {
+        products = new ArrayList<Product>();
+    }
 
     @Override
     public Product findProduct(int productID) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+
+        for (Product product : products) {
+            if (product.getProductID() == productID) {
+                return product;
+            }
+        }
+
+        return null;
     }
 
     @Override
@@ -25,7 +40,7 @@ public class ProductCatalog implements ICatalog{
 
     @Override
     public void addProduct(Product product) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        products.add(product);
     }
-    
+
 }

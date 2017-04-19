@@ -21,8 +21,9 @@ public class ProductInformationManagement implements ProductManageable{
     }
 
     @Override
-    public void createNewProduct() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void createNewProduct(String productName, Category category, int productID) {
+        Product newProduct = new Product(productName, category, productID);
+        productCatalog.addProduct(newProduct);
     }
 
     @Override
