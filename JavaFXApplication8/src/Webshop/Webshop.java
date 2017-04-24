@@ -16,6 +16,9 @@ import javafx.stage.Stage;
 
 // SÅ ER VI SATME IGANG
 
+
+
+
 public class Webshop extends Application {
     
     @Override
